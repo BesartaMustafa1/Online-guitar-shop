@@ -1,0 +1,141 @@
+.hero{
+    display:grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 32px;
+    padding: 20 0 5px;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  @media(max-width: 900px){
+     .hero{
+     grid-template-columns: 1fr;
+     }
+   }
+  
+  .headline{
+    display: grid;
+    justify-items: center;     
+    align-content: start;
+    margin: 20px;
+    padding: 8px 0 0; 
+  }
+  .kicker{ 
+    color: var(--accent);
+     letter-spacing:.12em; 
+     text-transform:uppercase; 
+     font-weight:700; 
+     margin:0 0 6px; 
+     font-size:12px
+     }
+  .headline h1{  
+    margin: 12px 0 10px;
+    font-size: clamp(34px, 4.6vw, 56px);
+    line-height: 1.16;
+    font-weight: 700;
+    text-align: center;       
+    max-width: 560px;           
+    padding-left: 0;   
+   }
+
+  .accent{ 
+     color: #ff7448;
+     padding-left: 50px;
+     text-decoration-thickness: 8px;
+     text-underline-offset: 10px;}
+  
+  .sub{ 
+    margin: 8px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+    text-align: center;
+    max-width: 520px;
+    padding-left: 0;  }
+  
+  
+  .visual{ 
+    position:relative; 
+    display:flex; 
+    justify-content:center;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+
+  .photo{ 
+    width:100%; 
+    max-width:620px; 
+    height:auto; 
+    border-radius:18px; 
+    border:1px solid var(--border); 
+    object-fit:cover; 
+    background:#222; 
+    object-fit: cover;
+    object-position: center 96%;
+  }
+ 
+  .logoRow {
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -25% 0 18px;        
+  justify-self: start;        
+  margin-left: 32px;    
+  }
+  
+  .brandName {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000; 
+  }
+  
+  .textBlock{
+    margin-left: 60px;      
+    max-width: 720px;
+  }
+  
+  .title{
+    margin: 8px 0 12px;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;        
+    font-weight: 800;
+  }
+
+  .frame{
+    position: relative;
+    width: 100%;
+    max-width: 680px;        
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 18px 18px 220px 220px;
+    margin-right: calc(50% - 27vw);
+  }
+  
+
+  
+  .badge{
+    position: absolute;
+    left: 60%;
+    bottom: -28px;             
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    display: grid;
+    place-items: center; 
+  }
+  
+  .badgeIcon{
+    width: 28px;
+    height: 28px;
+    display: block;
+  }
+
+  @media (max-width: 900px){
+    .frame{
+      max-width: 100%;
+      border-radius: 14px 14px 180px 180px;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+.wrap{
+    background: #111315;           
+    color: #e9eef3;
+    padding: 64px 0;
+    border-top: 1px solid #1f2430;
+    border-bottom: 1px solid #1f2430;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+  
+  .title{
+    margin: 0 0 28px;
+    font-size: clamp(28px, 4.2vw, 44px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    font-weight: 300;
+  }
+  .brand{ color: #FF6428; }
+  
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 40px;
+    align-items: start;
+    justify-items: center;
+  }
+  @media(max-width: 900px){
+    .grid{ grid-template-columns: 1fr; gap: 28px; }
+  }
+  
+  .card{
+    max-width: 340px;
+    display: grid;
+    justify-items: center;
+    gap: 14px;
+  }
+  
+  .iconWrap{
+    width: 64px; height: 64px;
+    border-radius: 16px;
+    background: #1a1f29;
+    box-shadow: inset 0 0 0 1px #2a3142;
+    display: grid; place-items: center;
+  }
+  
+  .iconSvg{
+    width: 28px; height: 28px;
+    fill: #8e97a8;           
+  }
+  
+  .cardTitle{
+    margin: 6px 0 2px;
+    font-size: 14px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .cardDesc{
+    margin: 0;
+    color: #9aa3af;           
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 30ch;
+  }
+  

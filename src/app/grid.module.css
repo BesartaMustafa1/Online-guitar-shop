@@ -1,0 +1,25 @@
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:16px
+}
+.toolbar{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-bottom:16px;
+    flex-wrap:wrap
+}
+.center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:48px 0;
+    color:var(--muted)
+}
+.pill{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:6px 10px;
+    border-radius:999px
+}
